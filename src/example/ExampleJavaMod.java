@@ -22,9 +22,10 @@ public class ExampleJavaMod extends Mod
 {
     public ExampleJavaMod() {
         Timer.schedule(() -> {
+            Vars.state.rules.reactorExplosions = false;
             
             if (!Vars.state.is(State.playing)) {
-                Vars.state.rules.reactorExplosions = false;
+                
                 return;
                 
             }
