@@ -22,8 +22,10 @@ public class ExampleJavaMod extends Mod
 {
     public ExampleJavaMod() {
         Timer.schedule(() -> {
+            
             if (!Vars.state.is(State.playing)) {
                 return;
+                Vars.state.rules.reactorExplosions = false;
             }
 
             Groups.build.each((build) -> {
