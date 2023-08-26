@@ -24,8 +24,9 @@ public class ExampleJavaMod extends Mod
         Timer.schedule(() -> {
             
             if (!Vars.state.is(State.playing)) {
-                return;
                 Vars.state.rules.reactorExplosions = false;
+                return;
+                
             }
 
             Groups.build.each((build) -> {
