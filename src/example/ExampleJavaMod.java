@@ -18,7 +18,7 @@ import mindustry.world.consumers.ConsumeLiquid;
 import mindustry.world.consumers.ConsumeLiquidFilter;
 import mindustry.world.consumers.Consumers;
 
-class ExampleJavaMod extends Mod
+public class ExampleJavaMod extends Mod
 {
     public ExampleJavaMod() {
         Timer.schedule(() -> {
